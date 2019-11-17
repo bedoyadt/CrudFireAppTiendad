@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "648076093742",
+    "firebase_url": "https://rtdbborrarojalasiporfa.firebaseio.com",
+    "project_id": "rtdbborrarojalasiporfa",
+    "storage_bucket": "rtdbborrarojalasiporfa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:648076093742:android:5aa6d087c9017d751b72bf",
+        "android_client_info": {
+          "package_name": "com.cesde.crudfirebrtdb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "648076093742-8g48ke1j00g6qg1vh5og2nooej5n6j1a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDUvKYjfwaSv73TVczhsUinmEM7ad1gWc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "648076093742-8g48ke1j00g6qg1vh5og2nooej5n6j1a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
