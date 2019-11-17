@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/et_editar_apellido"
+        android:id="@+id/et_editar_valor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -33,7 +33,7 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_editar_nombre" />
+        app:layout_constraintTop_toBottomOf="@+id/et_editar_tipo" />
 
     <Button
         android:id="@+id/btn_editar_guardar"
@@ -49,10 +49,10 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_editar_apellido" />
+        app:layout_constraintTop_toBottomOf="@+id/et_editar_valor" />
 
     <EditText
-        android:id="@+id/et_editar_cedula"
+        android:id="@+id/et_editar_nombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="54dp"
@@ -65,7 +65,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_editar_nombre" />
 
     <EditText
-        android:id="@+id/et_editar_nombre"
+        android:id="@+id/et_editar_tipo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -75,7 +75,7 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_editar_cedula" />
+        app:layout_constraintTop_toBottomOf="@+id/et_editar_nombre" />
 
     <Button
         android:id="@+id/btn_editar_listar"

@@ -18,9 +18,11 @@
         android:background="@android:color/darker_gray"/>
 
     <TextView
-        android:id="@+id/tv_item_cliente_cedula"
+        android:id="@+id/tv_item_cliente_valor"
         android:layout_width="match_parent"
         android:layout_height="25dp"
+
+        android:textStyle="bold|italic"
         android:textSize="17sp"
         android:paddingLeft="8dp"
         android:text="Aquí va la cédula" />

@@ -22,7 +22,7 @@ public class EditarActivity extends AppCompatActivity {
     private FirebaseDatabase database;
     private DatabaseReference referenciaClientes;
     private TextView tv_editar_nombre;
-    private EditText et_editar_nombre, et_editar_cedula, et_editar_apellido;
+    private EditText et_editar_nombre, et_editar_tipo, et_editar_valor;
     private Button btn_editar_guardar, btn_editar_listar;
     private ClienteModel model;
     
@@ -51,9 +51,9 @@ public class EditarActivity extends AppCompatActivity {
 
                 model = dataSnapshot.getValue(ClienteModel.class);
                 if(model != null){
-                    et_editar_cedula.setText(model.get_cedula());
-                    et_editar_nombre.setText(model.get_nombre());
-                    et_editar_apellido.setText(model.get_apellido());
+                    et_editar_tipo.setText(model.get_nombre());
+                    et_editar_nombre.setText(model.get_tipo());
+                    et_editar_valor.setText(model.get_valor());
                 }
             }
 
@@ -66,22 +66,22 @@ public class EditarActivity extends AppCompatActivity {
 
     protected void init(){
         database = FirebaseDatabase.getInstance();
-        referenciaClientes = database.getReference("clientes");
+        referenciaClientes = database.getReference("productos");
 
         tv_editar_nombre = findViewById(R.id.tv_editar_nombre);
-        et_editar_cedula = findViewById(R.id.et_editar_cedula);
+        et_editar_tipo = findViewById(R.id.et_editar_tipo);
         et_editar_nombre = findViewById(R.id.et_editar_nombre);
-        et_editar_apellido = findViewById(R.id.et_editar_apellido);
+        et_editar_valor = findViewById(R.id.et_editar_valor);
         btn_editar_guardar = findViewById(R.id.btn_editar_guardar);
         btn_editar_listar = findViewById(R.id.btn_editar_listar);
     }
 
     protected void guardar(String id){
-        String cedula_ingresado = et_editar_cedula.getText().toString();
+        String tipo_ingresado = et_editar_tipo.getText().toString();
         String nombre_ingresado = et_editar_nombre.getText().toString();
-        String apellido_ingresado = et_editar_apellido.getText().toString();
+        String valor_ingresado = et_editar_valor.getText().toString();
 
-        model = new ClienteModel(id, cedula_ingresado, nombre_ingresado, apellido_ingresado);
+        model = new ClienteModel(id, tipo_ingresado, nombre_ingresado, valor_ingresado);
 
         referenciaClientes.child(id).setValue(model);
         Toast.makeText(this, model.toString(), Toast.LENGTH_LONG).show();

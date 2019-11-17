@@ -49,7 +49,7 @@ public class ListarActivity extends AppCompatActivity {
 
     private void inicializar(){
         database = FirebaseDatabase.getInstance();
-        referenciaClientes = database.getReference("clientes");
+        referenciaClientes = database.getReference("productos");
         lv_listar_lista = findViewById(R.id.lv_listar_lista);
         model = new ClienteModel();
         list = new ArrayList<>();

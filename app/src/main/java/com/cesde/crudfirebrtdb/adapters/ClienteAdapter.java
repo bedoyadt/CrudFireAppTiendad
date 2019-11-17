@@ -48,12 +48,12 @@ public class ClienteAdapter extends BaseAdapter {
         }
 
         TextView tv_item_cliente_nombre = itemcito.findViewById(R.id.tv_item_cliente_nombre);
-        TextView tv_item_cliente_cedula = itemcito.findViewById(R.id.tv_item_cliente_cedula);
+        TextView tv_item_cliente_valor = itemcito.findViewById(R.id.tv_item_cliente_valor);
 
         model = list.get(i);
 
         tv_item_cliente_nombre.setText(model.get_nombre());
-        tv_item_cliente_cedula.setText(model.get_cedula());
+        tv_item_cliente_valor.setText(model.get_valor());
 
         return itemcito;
 

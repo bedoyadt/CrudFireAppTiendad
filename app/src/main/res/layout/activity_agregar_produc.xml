@@ -24,43 +24,43 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/et_main_cedula"
+        android:id="@+id/et_main_nombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="54dp"
         android:ems="10"
         android:textSize="18sp"
-        android:inputType="number"
-        android:hint="Ingrese su cédula"
+        android:inputType="textPersonName"
+        android:hint="Nombre"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_main_nombre" />
 
     <EditText
-        android:id="@+id/et_main_nombre"
+        android:id="@+id/et_main_tipo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:textSize="18sp"
         android:inputType="textPersonName"
-        android:hint="Ingrese su nombre"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_main_cedula" />
-
-    <EditText
-        android:id="@+id/et_main_apellido"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:textSize="18sp"
-        android:inputType="textPersonName"
-        android:hint="Ingrese su apellido"
+        android:hint="Tipo De Producto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_main_nombre" />
+
+    <EditText
+        android:id="@+id/et_main_valor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:textSize="18sp"
+        android:inputType="number"
+        android:hint="Valor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_main_tipo" />
 
     <Button
         android:id="@+id/btn_main_guardar"
@@ -76,7 +76,7 @@
         android:text="Guardar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_main_apellido" />
+        app:layout_constraintTop_toBottomOf="@+id/et_main_valor" />
 
     <Button
         android:id="@+id/btn_main_listar"

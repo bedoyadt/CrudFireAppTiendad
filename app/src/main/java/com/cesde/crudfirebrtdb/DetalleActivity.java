@@ -21,7 +21,7 @@ public class DetalleActivity extends AppCompatActivity {
     private FirebaseDatabase database;
     private DatabaseReference referenciaClientes;
     private ClienteModel model;
-    private TextView tv_detalle_cedula, tv_detalle_nombre;
+    private TextView tv_detalle_valor, tv_detalle_nombre;
     private Button btn_detalle_editar, btn_detalle_eliminar;
 
     @Override
@@ -66,9 +66,9 @@ public class DetalleActivity extends AppCompatActivity {
 
     private void inicializar(){
         database = FirebaseDatabase.getInstance();
-        referenciaClientes = database.getReference("clientes");
+        referenciaClientes = database.getReference("productos");
         model = new ClienteModel();
-        tv_detalle_cedula = findViewById(R.id.tv_detalle_cedula);
+        tv_detalle_valor = findViewById(R.id.tv_detalle_valor);
         tv_detalle_nombre = findViewById(R.id.tv_detalle_nombre);
         btn_detalle_editar = findViewById(R.id.btn_detalle_editar);
         btn_detalle_eliminar = findViewById(R.id.btn_detalle_eliminar);
@@ -82,8 +82,8 @@ public class DetalleActivity extends AppCompatActivity {
 
                 model = dataSnapshot.getValue(ClienteModel.class);
                 if(model != null){
-                    tv_detalle_cedula.setText(model.get_cedula());
-                    String nombreCompleto = model.get_nombre() + ", " + model.get_apellido();
+                    tv_detalle_valor.setText(model.get_nombre());
+                    String nombreCompleto = model.get_tipo() + ", " + model.get_valor();
                     tv_detalle_nombre.setText(nombreCompleto);
                 }
             }
