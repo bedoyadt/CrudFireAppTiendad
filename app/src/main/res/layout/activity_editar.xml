@@ -6,6 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".EditarActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="290dp"
+        android:layout_height="230dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/editorvideos" />
+
     <TextView
         android:id="@+id/tv_editar_nombre"
         android:layout_width="match_parent"
@@ -20,11 +35,12 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
         android:id="@+id/et_editar_valor"
-        android:layout_width="match_parent"
+        android:layout_width="283dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
@@ -53,9 +69,9 @@
 
     <EditText
         android:id="@+id/et_editar_nombre"
-        android:layout_width="match_parent"
+        android:layout_width="283dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="54dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="Ingrese su "
         android:inputType="textPersonName"
@@ -66,7 +82,7 @@
 
     <EditText
         android:id="@+id/et_editar_tipo"
-        android:layout_width="match_parent"
+        android:layout_width="283dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
