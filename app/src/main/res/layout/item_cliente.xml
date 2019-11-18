@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="60dp">
+    android:layout_height="wrap_content"
+    android:layout_margin="30dp"
+    android:background="#FCF9F9"
+>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="300dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        app:srcCompat="@mipmap/carro" />
 
     <TextView
         android:id="@+id/tv_item_cliente_nombre"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:textSize="25sp"
         android:paddingLeft="8dp"
         android:layout_gravity="center_horizontal"
@@ -15,15 +27,29 @@
         android:textStyle="bold|italic"
         android:layout_height="35dp"
         android:text="Aquí va el nombre"
-        android:background="@android:color/darker_gray"/>
+        android:background="#6F6867"/>
 
     <TextView
         android:id="@+id/tv_item_cliente_valor"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
         android:layout_height="25dp"
-
         android:textStyle="bold|italic"
         android:textSize="17sp"
         android:paddingLeft="8dp"
-        android:text="Aquí va la cédula" />
+        android:layout_marginTop="5dp"
+        android:background="#D5D6DA"
+        android:text="Aquí va la valor" />
+    <View
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:background="#111111"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="8dp"
+        />
+
+
 </LinearLayout>
