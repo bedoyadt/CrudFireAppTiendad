@@ -2,54 +2,73 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="30dp"
-    android:background="#FCF9F9"
->
+    app:cardMaxElevation="3dp"
+    app:cardUseCompatPadding="true"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:padding="10dp"
+    app:cardElevation="8dp"
+    >
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="300dp"
-        android:layout_height="90dp"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center_horizontal"
-        app:srcCompat="@mipmap/carro" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
 
-    <TextView
-        android:id="@+id/tv_item_cliente_nombre"
-        android:layout_width="300dp"
-        android:textSize="25sp"
-        android:paddingLeft="8dp"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center_horizontal"
-        android:textStyle="bold|italic"
-        android:layout_height="35dp"
-        android:text="Aquí va el nombre"
-        android:background="#6F6867"/>
+        android:background="@drawable/view"
+        android:backgroundTint="#DADBDD"
+        android:textColor="@android:color/background_light"
+        >
 
-    <TextView
-        android:id="@+id/tv_item_cliente_valor"
-        android:layout_width="300dp"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center_horizontal"
-        android:layout_height="25dp"
-        android:textStyle="bold|italic"
-        android:textSize="17sp"
-        android:paddingLeft="8dp"
-        android:layout_marginTop="5dp"
-        android:background="#D5D6DA"
-        android:text="Aquí va la valor" />
-    <View
-        android:layout_width="300dp"
-        android:layout_height="1dp"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center_horizontal"
-        android:background="#111111"
-        android:layout_marginTop="15dp"
-        android:paddingLeft="8dp"
-        />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="130dp"
+            android:layout_height="110dp"
+            app:srcCompat="@mipmap/completo"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_item_cliente_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Sample Card Title"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/imageView2"
+            android:layout_toEndOf="@+id/imageView2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_item_cliente_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Precio"
+            android:textSize="18sp"
+            android:textColor="#a9a9a9"
+            android:layout_toRightOf="@+id/imageView2"
+            android:layout_toEndOf="@+id/imageView2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/tv_item_cliente_nombre"
+
+
+            />
+
+    </RelativeLayout>
 
 
 </LinearLayout>

@@ -52,8 +52,8 @@ public class ClienteAdapter extends BaseAdapter {
 
         model = list.get(i);
 
-        tv_item_cliente_nombre.setText(model.get_nombre());
-        tv_item_cliente_valor.setText(model.get_valor());
+        tv_item_cliente_nombre.setText("Nombre: " + model.get_nombre());
+        tv_item_cliente_valor.setText("Precio: " + model.get_valor());
 
         return itemcito;
 
