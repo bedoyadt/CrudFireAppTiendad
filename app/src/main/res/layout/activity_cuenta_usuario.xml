@@ -27,13 +27,14 @@
         android:id="@+id/fab_nuevo_listar"
         android:layout_width="330dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="280dp"
+        android:layout_marginTop="196dp"
         android:background="@drawable/boton"
         android:backgroundTint="#224EB8"
         android:text="LISTAR DE PRODUCTOS"
         android:textColor="@android:color/background_light"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
